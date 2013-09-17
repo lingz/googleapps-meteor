@@ -12,12 +12,12 @@ Package.on_use(function(api) {
   api.use(['underscore', 'service-configuration'], ['client', 'server']);
   api.use(['random', 'templating'], 'client');
 
-  api.export('Google');
+  api.export('GoogleApps');
 
   api.add_files(
-    ['google_configure.html', 'google_configure.js'],
+    ['googleapps_configure.html', 'googleapps_configure.js'],
     'client');
 
-  api.add_files('google_server.js', 'server');
-  api.add_files('google_client.js', 'client');
+  api.add_files('googleapps_server.js', 'server');
+  api.add_files('googleapps_client.js', 'client');
 });
